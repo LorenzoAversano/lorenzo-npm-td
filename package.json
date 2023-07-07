@@ -18,6 +18,10 @@
   "homepage": "https://github.com/LorenzoAversano/lorenzo-npm-td#readme",
   "devDependencies": {
     "eslint": "^8.44.0",
+    "esm": "^3.2.25",
     "jest": "^29.6.1"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
   }
 }

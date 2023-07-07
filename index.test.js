@@ -1,7 +1,8 @@
-const getRandomNumber = require('./index');
+const festivals = require('./festivalsScraper');
 
-test('It should return an interger', () => {
-    const number = getRandomNumber();
-    expect(number). toBeGreaterThanOrEqual(0);
-    expect(number). toBeLessThanOrEqual(100);
+describe('Festivals', () => {
+  test('Récupère les festivals', async () => {
+    const festivalData = await festivals.getFestivals();
+    expect(festivalData.length).toBeGreaterThan(0);
+  });
 });
